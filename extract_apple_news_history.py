@@ -37,8 +37,6 @@ async def visit_and_grab_details(
             resp = await response.read()
             html = resp.decode("utf-8")
 
-            print(html)
-
             # Use BeautifulSoup to extract the URL from the redirectToUrlAfterTimeout function
             soup = BeautifulSoup(html, "html.parser")
             if script_tag := soup.find(
