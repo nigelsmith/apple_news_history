@@ -1,3 +1,5 @@
+#!python3
+
 import pathlib
 import aiohttp
 import asyncio
